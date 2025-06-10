@@ -14,7 +14,7 @@ This is the **User Service** for a scalable Stories backend (like Instagram/Snap
 - Register/Login via email & password
 - JWT-based auth
 - Follow/Unfollow users
-- Get followers list (with timestamps)
+- Get followers list
 - gRPC APIs defined in `user.proto`
 
 ---
