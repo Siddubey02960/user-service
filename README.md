@@ -1,4 +1,4 @@
-# 🧑‍💼 User Service – Stories Platform 
+#  User Service – Stories Platform 
 
 This is the **User Service** for a scalable Stories backend (like Instagram/Snapchat), built as a microservice with:
 
