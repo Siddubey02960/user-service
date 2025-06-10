@@ -23,7 +23,7 @@ This is the **User Service** for a scalable Stories backend (like Instagram/Snap
 Steps to run
 
 1.clone
-git clone https://github.com/yourname/stories-platform.git
+git clone https://github.com/Siddubey02960/user-service
 
 
 2.add env 
