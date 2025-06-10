@@ -2,14 +2,14 @@
 
 This is the **User Service** for a scalable Stories backend (like Instagram/Snapchat), built as a microservice with:
 
-- 📦 gRPC communication
-- 🗃 PostgreSQL for data storage
-- 🔐 JWT authentication
-- 🐳 Dockerized deployment
+-  gRPC communication
+-  PostgreSQL for data storage
+-  JWT authentication
+-  Dockerized deployment
 
 ---
 
-## 🚀 Features
+## Key Features
 
 - Register/Login via email & password
 - JWT-based auth
