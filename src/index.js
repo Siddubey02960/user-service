@@ -3,7 +3,7 @@ const protoLoader = require('@grpc/proto-loader');
 const path = require('path');
 const userController = require('./controller/user-controller')
 
-const PROTO_PATH = path.join(__dirname, '../');
+const PROTO_PATH = path.join(__dirname, '../protos/user.proto');
 
 // Load proto file
 const packageDefinition = protoLoader.loadSync(PROTO_PATH, {
