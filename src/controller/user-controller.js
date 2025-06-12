@@ -59,14 +59,29 @@ const saltRounds = salt_value;
     return { message: 'Unfollowed successfully' };
   }
 
-  const getFollowers= async({ userId }) =>{
-    const result = await db.query(
-      `SELECT follower_id FROM follower WHERE following_id = $1`,
-      [userId]
-    );
-    const followerIds = result.rows.map((res) => res.follower_id.toString());
-    return { followerIds };
-  }
+  const getFollowers=  async ({ userId, page_size = 1, limit = 10 }) => {
+    
+      const countResult = await db.query(
+        `SELECT COUNT(*) FROM follower WHERE following_id = $1`,
+        [userId]
+      );
+      const totalFollowers = parseInt(countResult.rows[0].count, 10);
+    
+      // Fetch paginated results
+      const result = await db.query(
+        `SELECT follower_id FROM follower
+         WHERE following_id = $1
+         ORDER BY created_at DESC
+         LIMIT $2 OFFSET $3`,
+        [userId, page_size, page_number]
+      );
+    
+      return {
+        followers_info: result.rows,
+        total_count: totalFollowers
+      };
+    };
+  
 
   module.exports = {
     register,
