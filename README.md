@@ -1,20 +1,20 @@
-# 🧑‍💼 User Service – Stories Platform (Microservices Backend)
+#  User Service – Stories Platform 
 
 This is the **User Service** for a scalable Stories backend (like Instagram/Snapchat), built as a microservice with:
 
-- 📦 gRPC communication
-- 🗃 PostgreSQL for data storage
-- 🔐 JWT authentication
-- 🐳 Dockerized deployment
+-  gRPC communication
+-  PostgreSQL for data storage
+-  JWT authentication
+-  Dockerized deployment
 
 ---
 
-## 🚀 Features
+## Key Features
 
 - Register/Login via email & password
 - JWT-based auth
 - Follow/Unfollow users
-- Get followers list (with timestamps)
+- Get followers list
 - gRPC APIs defined in `user.proto`
 
 ---
@@ -23,7 +23,7 @@ This is the **User Service** for a scalable Stories backend (like Instagram/Snap
 Steps to run
 
 1.clone
-git clone https://github.com/yourname/stories-platform.git
+git clone https://github.com/Siddubey02960/user-service
 
 
 2.add env 
